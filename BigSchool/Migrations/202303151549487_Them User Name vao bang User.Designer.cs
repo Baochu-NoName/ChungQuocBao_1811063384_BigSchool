@@ -7,13 +7,13 @@ namespace BigSchool.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Khoitaobangcategoryvacourse : IMigrationMetadata
+    public sealed partial class ThemUserNamevaobangUser : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Khoitaobangcategoryvacourse));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ThemUserNamevaobangUser));
         
         string IMigrationMetadata.Id
         {
-            get { return "202303130508165_Khoi tao bang category va course"; }
+            get { return "202303151549487_Them User Name vao bang User"; }
         }
         
         string IMigrationMetadata.Source

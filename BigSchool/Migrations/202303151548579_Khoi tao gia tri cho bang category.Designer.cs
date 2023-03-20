@@ -13,7 +13,7 @@ namespace BigSchool.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202303130509345_Khoi tao gia tri cho bang category"; }
+            get { return "202303151548579_Khoi tao gia tri cho bang category"; }
         }
         
         string IMigrationMetadata.Source

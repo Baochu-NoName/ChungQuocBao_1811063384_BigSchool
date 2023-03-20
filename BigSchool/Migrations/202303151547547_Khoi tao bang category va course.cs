@@ -32,6 +32,7 @@ namespace BigSchool.Migrations
                 .Index(t => t.LecturerId)
                 .Index(t => t.CategoryId);
             
+            AddColumn("dbo.AspNetUsers", "Name", c => c.String(nullable: false, maxLength: 255));
         }
         
         public override void Down()
@@ -40,6 +41,7 @@ namespace BigSchool.Migrations
             DropForeignKey("dbo.Courses", "CategoryId", "dbo.Categories");
             DropIndex("dbo.Courses", new[] { "CategoryId" });
             DropIndex("dbo.Courses", new[] { "LecturerId" });
+            DropColumn("dbo.AspNetUsers", "Name");
             DropTable("dbo.Courses");
             DropTable("dbo.Categories");
         }
